@@ -1,7 +1,7 @@
 Python Virtualenv Example
 =========================
 
-**You must have 7-zip installed, and `7z` on your path**
+**📝 You must have 7-zip installed, and `7z` on your path**
 
 This is a minimal project example that uses Python in a Virtualenv to install
 TensorFlow from a `requirements.txt` file.
