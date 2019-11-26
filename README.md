@@ -1,9 +1,29 @@
-Python VENV Example
-===================
+Python Virtualenv Example
+=========================
+
+This is a minimal project example that uses Python in a Virtualenv to install
+TensorFlow from a `requirements.txt` file.
+
+To create the project Virtualenv, run `create-venv.ps1`.
+
+```
+PS > .\create-venv.ps1
+```
+
+This script will install Virtualenv, a portable Python in the project directory
+under `third_party/` and create a a venv using this version of Python (3.7).
+
+Instructions are provided on-screen to install TensorFlow:
+```
+. .\.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+## Detailed Steps
 
 Install `virtualenv`.
 ```
-python install -U pip virtualenv
+pip install -U pip virtualenv
 ```
 
 Download a portable version of Python.
@@ -21,6 +41,11 @@ python -m virtualenv --python=third_party\WPy64-3741\python-3.7.4.amd64\python.e
 Activate the `venv` environment.
 ```
 . .\venv\Scripts\activate. 
+```
+
+Install `requirements.txt`
+```
+pip install -r requirements.txt
 ```
 
 Deactivate the environment by executing `deactivate`.
