@@ -2,7 +2,8 @@ Param ($OutPath = "third_party")
 
 Write-Host "Installing Virtualenv.." -ForegroundColor Magenta
 
-pip install -U pip virtualenv
+pip install -U pip
+pip install --user virtualenv
 
 if (Test-Path $OutPath) { rm -r -fo $OutPath }
 
